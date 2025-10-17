@@ -1,93 +1,159 @@
-<html lang="en"><head>
-  <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Fullscreen Mobile</title>
+  <title>Responsive Fullscreen Mobile Page</title>
   <style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    -webkit-text-size-adjust: 100%;
-    background: #0000;
-  }
-  .builder-layout,
-  #body_0,
-  #row_3,
-  .container,
-  .s-row,
-  #col_3 {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-  img {
-    display: block !important;
-    width: 100% !important;
-    height: auto !important;
-  }
-  @media (min-width: 768px) {
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      background: #f0f0f0;
+    /* Reset & base */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      -webkit-text-size-adjust: 100%;
+      background: #0000;
     }
-    .mobile-wrapper {
-      width: 430px;
-      max-width: 100%;
-      box-shadow: 0 0 20px rgba(0,0,0,0.2);
-      background: #fff;
+
+    * {
+      box-sizing: border-box;
     }
-  }
-</style>
+
+    /* Fullscreen behavior on mobile */
+    .builder-layout,
+    #body_0,
+    #row_1,
+    .container,
+    .s-row,
+    #col_1 {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      border: none !important;
+      border-radius: 0 !important;
+    }
+
+    img {
+      display: block !important;
+      width: 100% !important;
+      height: auto !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+      max-width: 100% !important;
+    }
+
+    a {
+      display: block;
+    }
+
+    [id^="content_image_"],
+    [id^="content_timer_"] {
+      margin: 0 !important;
+      padding: 0 !important;
+      line-height: 0 !important;
+    }
+
+    #body_0 {
+      min-height: 100vh !important;
+    }
+
+    /* Mobile screen simulation on desktop */
+    @media (min-width: 768px) {
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background: #f0f0f0; /* warna keliling luar (optional) */
+      }
+      .mobile-wrapper {
+        width: 430px; /* lebar "telefon" */
+        max-width: 100%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        background: #fff;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="\&quot;mobile-wrapper\&quot;">
-<div class="builder-layout">
-        <div id="body_0" style="width: 100%; margin: 0px auto; min-height: 100vh;">
-            
-        <div id="row_3" class="v-background-color v-padding v-background-image v-background-size" style="padding: 0px;">
-                <div class="container v-columns-background-color" style="max-width: 500px; margin: 0 auto;padding:0;">
-                    <div class="s-row" style="margin-left: 0; margin-right: 0;"><div id="col_3" class="column col-100 v-background-color v-border-radius v-order v-border v-align-items" style="display: flex; border-radius: 0px;">
-            <div style="width: 100%;padding:0;" class="v-padding">
-                
-            <div id="content_image_14" style="padding: 0px;"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
-            <img src="https://img2.shoppegram.com/MOnQybtTlUTS807kDT5z6PfIHdMhauAKLGbqYYaG.png" style="width: 100%; max-width: 828px;" title="" class="v-src-width v-src-max-width">
-        </div></div><div id="content_image_15" style="padding: 0px;"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
-            <img src="https://img2.shoppegram.com/XCaEoc2jEOl3BmzDCRvBiIiW3rTOreMXG4oRo5Q2.png" style="width: 100%; max-width: 828px;" title="" class="v-src-width v-src-max-width">
-        </div></div><div id="content_image_16" style="padding: 0px;"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
-            <img src="https://img2.shoppegram.com/gvlAXJ2GVgblYt6ckfJQgpS4zrN1TiHSo47RT6Fd.png" style="width: 100%; max-width: 828px;" title="" class="v-src-width v-src-max-width">
-        </div></div><div id="content_image_17" style="padding: 0px;"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
-            <img src="https://img2.shoppegram.com/DTkVGJszLNDKL0rNUGvCfnXKXMpFYl6bJFRzAUR0.png" style="width: 100%; max-width: 828px;" title="" class="v-src-width v-src-max-width">
-        </div></div><div id="content_image_18" style="padding: 0px;"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
-            <img src="https://img2.shoppegram.com/ziRyYjdURKoCn7xQ2NQ6SolrdzZwn6EGslymIIz3.png" style="width: 100%; max-width: 828px;" title="" class="v-src-width v-src-max-width">
-        </div></div><div id="content_image_19" style="padding: 0px;"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
-            <img src="https://img2.shoppegram.com/mwLqRYNqhQ3bdKHyQ5YX1ieDLxg90uCYdZrpxhIv.png" style="width: 100%; max-width: 828px;" title="" class="v-src-width v-src-max-width">
-        </div></div><div id="content_image_20" style="padding: 0px;"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
-            <img src="https://img2.shoppegram.com/EWRKhYRs52iE6kuOkfowjVP3Kqji7B6Z1nemSYN8.png" style="width: 100%; max-width: 827px;" title="" class="v-src-width v-src-max-width">
-        </div></div><div id="content_image_21" style="padding: 0px;"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
-            <img src="https://img2.shoppegram.com/mMYVoA82gBt2xFb3DqVCllgURIp1xius8fDMQbJE.png" style="width: 100%; max-width: 828px;" title="" class="v-src-width v-src-max-width">
-        </div></div><div id="content_image_22" style="padding: 0px;"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
-            <img src="https://img2.shoppegram.com/wQAVPpeNwzhvDsQb2cYjT9IloLs2OkQn2rHTItr6.png" style="width: 100%; max-width: 828px;" title="" class="v-src-width v-src-max-width">
-        </div></div><div id="content_timer_2" style="padding: 0px;"><div style="line-height: 0; position: relative; text-align: center; min-height: auto;">
-            
-        <a target="_blank"><img src="https://builder.shoppego.com/timer/5244b2b2-6040-453b-82ac-773990ea8e5d?1760517158801" title="Timer" alt="Timer" style="width: auto; max-width: 100%;" class="v-width"></a></div></div><div id="content_image_24" style="padding: 0px;"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
-            <img src="https://img2.shoppegram.com/3WpQyjwu79RBZ14ELGjwVXY9NHidE34QfpEtXrXm.png" style="width: 100%; max-width: 827px;" title="" class="v-src-width v-src-max-width">
-        </div></div><div id="content_image_26" style="padding: 0px;"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
-            <img src="https://img2.shoppegram.com/Rz6xtNxwW3hTTdXy17nuIkXi4n91WkJhIoEk9pYw.png" style="width: 100%; max-width: 828px;" title="" class="v-src-width v-src-max-width">
-        </div></div><div id="content_image_27" style="padding: 0px;"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
-            <img src="https://img2.shoppegram.com/bEnh9K7UtFVmO6oDcP568qIvqx1otkNYVNSU2oNZ.png" style="width: 100%; max-width: 828px;" title="" class="v-src-width v-src-max-width">
-        </div></div><div id="content_image_28" style="padding: 0px;"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
-            <img src="https://img2.shoppegram.com/Iwb3t5UH80pweXLPjsVpmQR8MI4IftCy71B5VgRs.png" style="width: 100%; max-width: 828px;" title="" class="v-src-width v-src-max-width">
-        </div></div></div>
-        </div></div>
+  <div class="mobile-wrapper">
+    <div class="builder-layout">
+      <div id="body_0" style="width: 100%; margin: 0px auto; min-height: 100vh;">
+        <div id="row_1" style="padding: 0px;" class="v-background-color v-padding v-background-image v-background-size">
+          <div class="container v-columns-background-color" style="max-width: 500px; margin: 0 auto; padding:0;">
+            <div class="s-row" style="margin-left: 0; margin-right: 0;">
+              <div id="col_1" class="column col-100 v-background-color v-border-radius v-order v-border v-align-items" style="display: flex; border-radius: 0px;">
+                <div style="width: 100%; padding:0;" class="v-padding">
+
+                  <div id="content_image_1"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
+                    <img src="https://img2.shoppegram.com/MOnQybtTlUTS807kDT5z6PfIHdMhauAKLGbqYYaG.png" style="width: 100%; max-width: 828px;">
+                  </div></div>
+
+                  <div id="content_image_2"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
+                    <img src="https://img2.shoppegram.com/XCaEoc2jEOl3BmzDCRvBiIiW3rTOreMXG4oRo5Q2.png">
+                  </div></div>
+
+                  <div id="content_image_3"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
+                    <img src="https://img2.shoppegram.com/gvlAXJ2GVgblYt6ckfJQgpS4zrN1TiHSo47RT6Fd.png">
+                  </div></div>
+
+                  <div id="content_image_4"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
+                    <img src="https://img2.shoppegram.com/DTkVGJszLNDKL0rNUGvCfnXKXMpFYl6bJFRzAUR0.png">
+                  </div></div>
+
+                  <div id="content_image_5"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
+                    <img src="https://img2.shoppegram.com/ziRyYjdURKoCn7xQ2NQ6SolrdzZwn6EGslymIIz3.png">
+                  </div></div>
+
+                  <div id="content_image_6"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
+                    <img src="https://img2.shoppegram.com/mwLqRYNqhQ3bdKHyQ5YX1ieDLxg90uCYdZrpxhIv.png">
+                  </div></div>
+
+                  <div id="content_image_7"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
+                    <img src="https://img2.shoppegram.com/EWRKhYRs52iE6kuOkfowjVP3Kqji7B6Z1nemSYN8.png">
+                  </div></div>
+
+                  <div id="content_image_8"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
+                    <img src="https://img2.shoppegram.com/mMYVoA82gBt2xFb3DqVCllgURIp1xius8fDMQbJE.png">
+                  </div></div>
+
+                  <div id="content_image_9"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
+                    <a href="https://www.youtube.com/watch?v=e5AwNU3Y2es" target="_blank">
+                      <img src="https://img2.shoppegram.com/wQAVPpeNwzhvDsQb2cYjT9IloLs2OkQn2rHTItr6.png">
+                    </a>
+                  </div></div>
+
+                  <div id="content_timer_1"><div style="line-height: 0; position: relative; text-align: center; min-height: auto;">
+                    <a target="_blank">
+                      <img src="https://builder.shoppego.com/timer/5244b2b2-6040-453b-82ac-773990ea8e5d" title="Timer" alt="Timer" style="width: auto; max-width: 100%;">
+                    </a>
+                  </div></div>
+
+                  <div id="content_image_10"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
+                    <img src="https://img2.shoppegram.com/3WpQyjwu79RBZ14ELGjwVXY9NHidE34QfpEtXrXm.png">
+                  </div></div>
+
+                  <div id="content_image_11"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
+                    <img src="https://img2.shoppegram.com/Rz6xtNxwW3hTTdXy17nuIkXi4n91WkJhIoEk9pYw.png">
+                  </div></div>
+
+                  <div id="content_image_12"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
+                    <img src="https://img2.shoppegram.com/bEnh9K7UtFVmO6oDcP568qIvqx1otkNYVNSU2oNZ.png">
+                  </div></div>
+
+                  <div id="content_image_13"><div style="position: relative; line-height: 0; text-align: center;" class="v-text-align">
+                    <img src="https://img2.shoppegram.com/Iwb3t5UH80pweXLPjsVpmQR8MI4IftCy71B5VgRs.png">
+                  </div></div>
+
                 </div>
-            </div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-
-
-</body></html>
+  </div>
+</body>
+</html>
